@@ -12,6 +12,9 @@
   height: 450px;
   margin-top: 5%;
 }
+.espacioUno > a{
+  left:30%;
+}
 .tituloSecundarioTxt{
   width: auto;
   color: #FFF;
@@ -23,7 +26,18 @@
   margin-left: 3%;
   margin-bottom: 5%;
 }
-@media screen and (max-width:866px) and (min-width: 516px){
+.textoUno{
+  width: 54%;
+  position: absolute;
+  flex-direction: column;
+  margin-left: 10%;
+  margin-top: 3%;
+}
+.porqueContenido{
+  width: 50%;
+  text-align: justify;
+}
+@media screen and (max-width:866px) and (min-width: 300px){
   .desaparece{
     display: none;
   }
@@ -37,19 +51,47 @@
     text-align: justify;
     margin: 0;
   }
+  .textoUno{
+    width: 100%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .mas-info{
+    width:100%;
+  }
+  .espacioUno > a{
+    left: 0;
+  }
+  .porqueContenido{
+    width: 95%;
+  }
 }
 
-@media screen and (max-width:600px) and (min-width: 516px){
+.porquetitulo{
+  position: absolute;
+  top: 55%;
+  left: 28%;
+  transform: translate(-50%, -50%);
+  font-size: 6rem;
+  font-family: 'Roboto', sans-serif;
+}
+@media screen and (max-width:600px) and (min-width: 300px){
   .espacioUno{
     margin-top: 15%;
   }
   .titleCarou{
     font-size: 3rem;
+    text-align: center;
   }
   .desaparece500{
     display: none;
   }
+  .porquetitulo{
+    font-size: 3rem;
+  }
 }
+
 @media (min-width:866px){
   .desaparece800{
     display: none;
@@ -61,17 +103,33 @@
     margin-top: 15%;
   }
   .titleCarou{
-    font-size: 3rem;
+    font-size: 2rem;
+    text-align: center;
   }
   .desaparece500{
     display: none;
   }
 }
+@media screen and (max-width:355px) and (min-width: 100px){
+  .espacioUno{
+    margin-top: 15%;
+  }
+  .titleCarou{
+    font-size: 2rem;
+    text-align: center;
+  }
+  .desaparece500{
+    display: none;
+  }
+}
+
+/*BOTONES DE ROLES*/
 @media (min-width:866px){
   .desaparece800{
     display: none;
   }
 }
+/* ---------------- */
 
 h2{
   color: #c501e2;  
@@ -87,10 +145,29 @@ header{
   width:100%;
 }
 
-.textoUno{
-  text-align: center;
-}
-
+/*@media screen and (max-width:560px) and (min-width: 100px){
+  .espacioUno{
+    margin-top: 15%;
+  }
+  .titleCarou{
+    font-size: 2rem;
+    text-align: center;
+  }
+  .desaparece500{
+    display: none;
+  }
+  .textoUno{
+    width: 100%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .espacioUno > a{
+    display: flex;
+    justify-content: center;
+    left:0;
+  }
+}*/
 aside{
     display: flex;
     flex-direction: column;
@@ -140,7 +217,7 @@ footer{
   color: white;
   height: 540px;
 }
-@media screen and (max-width:516px) and (min-width: 350px){
+@media screen and (max-width:516px) and (min-width: 300px){
   .ayuda{
     height: 650px;
   }
@@ -168,9 +245,7 @@ footer{
   display: flex;
   justify-content: flex-end;
 }
-.espacioUno > a{
-  left:30%;
-}
+
 .img-espacioUno{
   width: 35%;
   height: 450px;
@@ -200,13 +275,7 @@ footer{
   text-align: center;
 }
 
-.textoUno{
-    width: 54%;
-    position: absolute;
-    flex-direction: column;
-    margin-left: 10%;
-    margin-top: 3%;
-}
+
 .textoUno > h2{
   width: 100%;
   font-size: 50px;
@@ -216,6 +285,7 @@ footer{
     display: flex;
     justify-content: space-evenly;
     padding: 1%;
+    flex-wrap: wrap;
 }
 
 .contenedor_workers{
@@ -291,7 +361,7 @@ ul{
   margin-top: 5.5%;
   font-size: 2rem;
 }
-@media screen and (max-width:516px) and (min-width:400px) {
+@media screen and (max-width:516px) and (min-width:300px) {
   form{
     height: 575px;
   }
@@ -787,6 +857,7 @@ ul{
     width: 100%;
     position: relative;
     text-align: center;
+    display: block;
     /* width: 90%;
     height: 50rem;
     background-image: url("./img/porqueFortrain.jpg");
@@ -794,17 +865,7 @@ ul{
     background-size: cover;
     background-position: center center; */
   }
-  .headerImg img{
-    display: block;
-  }
-  .porquetitulo{
-    position: absolute;
-    top: 55%;
-    left: 28%;
-    transform: translate(-50%, -50%);
-    font-size: 6rem;
-    font-family: Roboto;
-  }
+  
   .headerColor{
     height: .8rem;
     background: linear-gradient(270deg, 
@@ -831,10 +892,6 @@ ul{
     rgba(29, 9, 109, 0.8) 91.54%, 
     rgba(0, 0, 0, 0.5) 106.66%
   );
-  }
-
-  .porqueContenido{
-    width: 50%;
   }
 
   .contenidoTxt{
