@@ -25,6 +25,8 @@
   line-height: 1.5;
   margin-left: 3%;
   margin-bottom: 5%;
+  text-align: justify;
+  margin: 0;
 }
 .textoUno{
   width: 54%;
@@ -47,10 +49,7 @@
   .espacioUno{
     margin-top: 15%;
   }
-  .tituloSecundarioTxt{
-    text-align: justify;
-    margin: 0;
-  }
+
   .textoUno{
     width: 100%;
     text-align: center;
@@ -363,7 +362,7 @@ ul{
 }
 @media screen and (max-width:516px) and (min-width:300px) {
   form{
-    height: 575px;
+    height: 600px;
   }
 }
 
@@ -733,6 +732,11 @@ ul{
     margin-top: 5%;
     margin-left: 3%;
     margin-bottom: 5%;
+  }
+  @media screen and (max-width:574px) and (min-width:100px) {
+    .tituloSecundario{
+      font-size: calc(40px + 0.5vw);
+    }
   }
 
   .tituloSecundarioImg{
