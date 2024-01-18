@@ -25,7 +25,7 @@
   line-height: 1.5;
   margin-left: 3%;
   margin-bottom: 5%;
-  text-align: justify;
+  text-align: center;
   margin: 0;
 }
 .textoUno{
@@ -39,6 +39,10 @@
   width: 50%;
   text-align: justify;
 }
+.tituloContainer{
+  width: 100%;
+  padding-top: 10%;
+}
 @media screen and (max-width:866px) and (min-width: 300px){
   .desaparece{
     display: none;
@@ -49,7 +53,6 @@
   .espacioUno{
     margin-top: 15%;
   }
-
   .textoUno{
     width: 100%;
     text-align: center;
@@ -64,6 +67,9 @@
   }
   .porqueContenido{
     width: 95%;
+  }
+  .tituloContainer{
+    padding-top: 20%;
   }
 }
 
@@ -119,6 +125,9 @@
   }
   .desaparece500{
     display: none;
+  }
+  .tituloContainer{
+    padding-top: 35%;
   }
 }
 
@@ -443,7 +452,7 @@ ul{
     width: 15em;
     filter: drop-shadow(8px 8px 5px rgba(0, 0,  0, 0.7))
   }
-  
+ 
   .container_cards .card_equipo .contentBx{
     position: absolute;
     bottom: 0;
@@ -530,13 +539,10 @@ ul{
   /* fin estilos de cards_Equipo */
 
   /* inicio estilos servicios */
-  .tituloContainer{
-    width: 100%;
-    
-  }
+
   .tituloServicios{
     width: 100%;
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     font-weight: 400
     ;
     font-size: 7rem;
@@ -545,18 +551,22 @@ ul{
     margin-bottom: 2%;
   }
 
-  .serviciosContainer,.imgsServContainer{
+  .serviciosContainer, .imgsServContainer{
     width: 100%;
+    padding-top: 6%;
   }
   .SubtituloServ{
-    width: 100%;
     display: flex;
     color: #FFF;
     align-items: center;
     justify-content: center;
     font-size: 6rem;
   }
-
+@media screen and (max-width:464px) and (min-width:100px){
+  .SubtituloServ{
+    font-size: calc(4rem + 00.5vw);
+  }
+}
   .ServTxtContainer{
     margin: -1.2% 0 0 0;
   }
@@ -668,7 +678,7 @@ ul{
   }
   @media screen and (max-width:866px) and (min-width: 474px){
     .headerTitulo{
-      font-size: 8rem;
+      font-size: 6rem;
       margin-top: 10%;
     }
   }
@@ -678,7 +688,29 @@ ul{
       margin-top: 30%;
     }
   }
-
+  .headerTituloSol{
+    margin-top: 8%;
+    flex-shrink: 0;
+    color: #FFF;
+    margin-left: 5%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 10rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  @media screen and (max-width:866px) and (min-width: 413px){
+    .headerTituloSol{
+      font-size: 5rem;
+      margin-top: 15%;
+    }
+  }
+  @media screen and (max-width:412px) and (min-width: 300px){
+    .headerTituloSol{
+      font-size: 4rem;
+      margin-top: 30%;
+    }
+  }
   .headerTxt{
     margin-left: 3%;
     color: #FFF;
@@ -732,10 +764,11 @@ ul{
     margin-top: 5%;
     margin-left: 3%;
     margin-bottom: 5%;
+    text-align: center;
   }
   @media screen and (max-width:574px) and (min-width:100px) {
     .tituloSecundario{
-      font-size: calc(40px + 0.5vw);
+      font-size: calc(35px + 0.5vw);
     }
   }
 
@@ -933,7 +966,7 @@ ul{
     background: #FFFFFF;
   }
   .tituloContacto{
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     font-size: 60px;
     font-weight: 600;
     line-height: 70px;
@@ -965,7 +998,7 @@ ul{
     margin-bottom: 0;
   }
   .infoContacto .txtContacto{
-    font-family: Roboto;
+    font-family:' Roboto', sans-serif;
     font-size: .6rem;
     font-weight: 400;
     line-height: 23px;
